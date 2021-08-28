@@ -17,7 +17,21 @@ const CarItem = (props) => {
         <Text style={styles.subtitle}> Giá khởi điểm: 200.000 $</Text>
       </View>
 
-      <StyleButton/>
+      <StyleButton
+        type = "primary" 
+        content = {"Custom Order"} 
+        onPress ={() =>  {
+          console.warn("Customer Order was pressed");
+      }}
+      />
+
+      <StyleButton
+        type = "secondary" 
+        content ={"Existing Inventory"} 
+        onPress ={() =>  {
+          console.warn("Existing Inventory was pressed");
+      }}
+      />
 
     </View>    
     );
