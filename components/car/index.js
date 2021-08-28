@@ -14,24 +14,26 @@ const CarItem = (props) => {
 
       <View style={styles.titles}>
         <Text style={styles.title}>Model S</Text>
-        <Text style={styles.subtitle}> Giá khởi điểm: 200.000 $</Text>
+        <Text style={styles.subtitle}> Giá khởi điểm: 200.000 $</Text>  
       </View>
 
-      <StyleButton
-        type = "primary" 
-        content = {"Custom Order"} 
-        onPress ={() =>  {
-          console.warn("Customer Order was pressed");
-      }}
-      />
+      <View style={styles.buttonsContainer}>
+        <StyleButton
+          type="primary"
+          content={"Custom Order"}
+          onPress={() => {
+            console.warn("Custom Order was pressed");
+          }}
+        />
 
-      <StyleButton
-        type = "secondary" 
-        content ={"Existing Inventory"} 
-        onPress ={() =>  {
-          console.warn("Existing Inventory was pressed");
-      }}
-      />
+        <StyleButton
+          type="secondary"
+          content={"Existing Inventory"}
+          onPress={() => {
+            console.warn("Existing Inventory was pressed");
+          }}
+        />
+      </View>
 
     </View>    
     );
