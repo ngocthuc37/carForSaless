@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
       },
 
       titles: {
-        marginTop: "30%",
+        marginTop: "20%",
         alignItems: 'center'
       },
 
@@ -33,7 +33,10 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 30,
         width: '100%',
-  }
+      },
+      subtitleCTA :{
+        textDecorationLine: 'underline',
+      }
      
 });
 
