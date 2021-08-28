@@ -1,18 +1,19 @@
 import React from 'react';
-import {View,Text, Pressable} from 'react-native';
+import { View, Text, TouchableOpacity} from 'react-native';
+
 import styles from './styles';
 
 const StyleButton = (props) => {
     return (
     <View style = {styles.container}>
-        <Pressable 
+        <TouchableOpacity 
             style={styles.button}
             onPress ={() => { 
-                console.warn(   data, 'Hey there');
+                console.warn(  data, 'Hey there');
             }}
-            >
+            >   
             <Text style={styles.buttonText}> Custom Order</Text>
-        </Pressable>
+        </TouchableOpacity>
         
       
     </View>    
