@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
       },
 
       titles: {
-        marginTop: "20%",
+        marginTop: "25%",
         alignItems: 'center'
       },
 
